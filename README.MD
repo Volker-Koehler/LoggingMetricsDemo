@@ -48,7 +48,6 @@ Follow the steps below to set up the demo:
 
 To stop and remove the containers, run the following command:
 
-    ```bash
-    docker rm 'containername'
-    ```
+    docker-compose down
+    
     
