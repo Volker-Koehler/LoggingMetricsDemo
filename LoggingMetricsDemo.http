@@ -1,0 +1,6 @@
+@LoggingMetricsDemo_HostAddress = http://localhost:5000
+
+GET {{LoggingMetricsDemo_HostAddress}}/api/GetVersion/
+Accept: application/json
+
+###
