@@ -1,4 +1,4 @@
-version: '3.8'
+#version: '3.8'
 
 services:
   elasticsearch:
@@ -34,6 +34,15 @@ services:
       - elastic
     depends_on:
       - elasticsearch
+  seq:
+    image: datalust/seq:latest
+    ports:
+       - '5300:80'
+       - '5341:5341'
+    volumes:
+       - seq-data:/data
+    environment:
+      ACCEPT_EULA: Y
   
 networks:
   elastic:
@@ -46,3 +55,6 @@ volumes:
       type: none
       o: bind
       device: c:/elasticsearch/data
+  
+  seq-data:
+    
