@@ -15,7 +15,7 @@ Follow the steps below to set up the demo:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/LoggingMetricsDemo.git
+    git clone https://github.com/Volker-Koehler/LoggingMetricsDemo.git
     ```
 
 2. Navigate to the project directory:
@@ -27,7 +27,7 @@ Follow the steps below to set up the demo:
 3. Start Elasticsearch and Kibana containers:
 
     ```bash
-    docker-compose up -d
+    docker-compose up -d --build
     ```
 
     This will start Elasticsearch and Kibana containers in the background.
@@ -35,7 +35,8 @@ Follow the steps below to set up the demo:
 4. Build and run the .NET web application:
 
     ```bash
-    docker-compose -f docker-compose.app.yml up -d --build
+    dotnet build 
+    dotnet run
     ```
 
     This will build and run the .NET web application container.
