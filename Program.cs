@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Http.HttpResults;
-
 using Serilog;
 
 var path = Path.GetDirectoryName(AppContext.BaseDirectory);
@@ -36,5 +34,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseSerilogRequestLogging();
-app.MapControllers(); 
+app.MapControllers();
+Log.Logger.Information("Starting the {Application}", builder.Configuration["ApplicationName"] ?? "No Name");
 app.Run();
