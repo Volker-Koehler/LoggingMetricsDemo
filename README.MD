@@ -1,6 +1,6 @@
 # Logging Metrics Demo
 
-This repository contains a demo for setting up Elasticsearch, Kibana, and a .NET web application using Docker.
+This repository contains a demo for setting up Elasticsearch, Kibana, SEQ and a .NET web application using Docker.
 
 ## Prerequisites
 
